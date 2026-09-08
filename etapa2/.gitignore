@@ -1,0 +1,9 @@
+clara/
+**/clara/
+venv
+**/__pycache__/
+*.pyc
+
+funcoes.py 
+
+requirements.txt
