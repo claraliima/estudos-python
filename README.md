@@ -60,13 +60,20 @@ Criação de um formulário para inserção de novos livros na aplicação da bi
 Criação de um módulo de conexão com o SQLite3 para a aplicação, preparado para ser importado e receber queries, seguindo como referência o módulo dados.py.
 ---
 
-## Etapa 3 - Manipulação e Análise de Dados com Pandas
+## Etapa 3
 
-| Atividade | Tópico Principal | Principais Operações / Técnicas Aplicadas |
-| :--- | :--- | :--- |
-| **Atividade 01** | `pd.Series` | Criação de listas, conversão para Series, índices alfabéticos, fatiamento (`head`/`tail`), operações aritméticas e conversão para dicionário. |
-| **Atividade 02** | `pd.DataFrame` | Construção com múltiplas listas, índices personalizados nas linhas, manipulação de colunas numéricas, fatiamento e exportação para dicionário. |
-| **Atividade 03** | Análise e Sanitização | Auditoria de integrações (`.merge` com `indicator=True`), filtros booleanos, métricas financeiras (faturamento bruto e ticket médio com `.groupby`), `.nlargest()` e desconto médio por categoria. |comercial.
+#### `Etapa03/Atividade01/`
+Exercícios com `pd.Series` envolvendo criação de séries numéricas e de texto com índices alfabéticos, fatiamento (`head`/`tail`), adição escalar e exportação para dicionário.
+
+#### `Etapa03/Atividade02/`
+Exercícios com `pd.DataFrame` cobrindo construção a partir de múltiplas listas, índices personalizados, manipulação de colunas numéricas, seleção de linhas e conversão para dicionário.
+
+#### `Etapa03/Atividade03/`
+Pipeline de análise de dados com Pandas:
+- Auditoria de integrações (`.merge(..., indicator=True)`) e filtragem de registros inválidos
+- Cálculo de faturamento bruto, descontos e impostos por transação
+- Agrupamento por cliente (`.groupby`) para ticket médio e destaque dos maiores clientes (`.nlargest()`)
+- Análise de desconto médio por categoria de produto
 
 ## Observações
 
