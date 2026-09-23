@@ -62,24 +62,11 @@ Criação de um módulo de conexão com o SQLite3 para a aplicação, preparado 
 
 ## Etapa 3 - Manipulação e Análise de Dados com Pandas
 
-### Atividade 01 - Séries (pd.Series)
-* **Criação de Listas e Series:** Definição de duas listas com pelo menos 10 elementos cada (numérica e texto) e conversão para `pd.Series`.
-* **Indexação Personalizada:** Atribuição de índice alfabético para uma das séries.
-* **Operações e Fatiamento:** Soma de 1 aos elementos da série numérica; exibição dos 6 primeiros elementos da série de texto e dos 7 últimos da série numérica.
-* **Conversão:** Conversão das séries tratadas para o formato de dicionário e exibição dos resultados.
-
-### Atividade 02 - DataFrames (pd.DataFrame)
-* **Construção de DataFrames:** Criação de um `DataFrame` a partir de 5 listas contendo pelo menos 10 elementos cada (incluindo colunas de texto).
-* **Indexação e Operações:** Atribuição de índices alfabéticos personalizados para as linhas e aplicação de adição (+1) aos valores das colunas numéricas.
-* **Exibição e Fatiamento:** Visualização das 2 primeiras linhas e das 4 últimas linhas do `DataFrame`.
-* **Exportação:** Conversão do `DataFrame` final para dicionário.
-
-### Atividade 03 - Tratamento de Dados e Regras de Negócio
-* **Auditoria de Integrações:** Aplicação de `.merge(..., indicator=True)` para identificar e tratar inconsistências cadastrais entre vendas, produtos e clientes.
-* **Sanitização de Dados:** Filtragem de registros inconsistentes (vendas com quantidade <= 0, preços zerados ou descontos > 1.0).
-* **Métricas Financeiras:** Criação da coluna de faturamento bruto (`quantidade * preco_unitario`) e cálculo do valor de descontos e impostos por transação.
-* **Análise de Clientes:** Agrupamento por cliente (`.groupby('cliente_id')`) para cálculo de ticket médio e identificação dos clientes de maior valor (`.nlargest()`).
-* **Mapeamento de Descontos:** Análise do desconto médio por categoria (`.groupby('categoria')['desconto'].mean()`) para identificar linhas de produtos que exigem mais incentivo comercial.
+| Atividade | Tópico Principal | Principais Operações / Técnicas Aplicadas |
+| :--- | :--- | :--- |
+| **Atividade 01** | `pd.Series` | Criação de listas, conversão para Series, índices alfabéticos, fatiamento (`head`/`tail`), operações aritméticas e conversão para dicionário. |
+| **Atividade 02** | `pd.DataFrame` | Construção com múltiplas listas, índices personalizados nas linhas, manipulação de colunas numéricas, fatiamento e exportação para dicionário. |
+| **Atividade 03** | Análise e Sanitização | Auditoria de integrações (`.merge` com `indicator=True`), filtros booleanos, métricas financeiras (faturamento bruto e ticket médio com `.groupby`), `.nlargest()` e desconto médio por categoria. |comercial.
 
 ## Observações
 
