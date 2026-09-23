@@ -58,6 +58,7 @@ Criação de um formulário para inserção de novos livros na aplicação da bi
 
 #### `Sqlite3/`
 Criação de um módulo de conexão com o SQLite3 para a aplicação, preparado para ser importado e receber queries, seguindo como referência o módulo dados.py.
+
 ---
 
 ## Etapa 3
