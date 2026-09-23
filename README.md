@@ -63,13 +63,13 @@ Criação de um módulo de conexão com o SQLite3 para a aplicação, preparado 
 
 ## Etapa 3
 
-#### `Etapa03/Atividade01/`
+#### `Atividade de Fixação 01 - Serie/`
 Exercícios com `pd.Series` envolvendo criação de séries numéricas e de texto com índices alfabéticos, fatiamento (`head`/`tail`), adição escalar e exportação para dicionário.
 
-#### `Etapa03/Atividade02/`
+#### `Atividade de Fixação 02 - Dataframe/`
 Exercícios com `pd.DataFrame` cobrindo construção a partir de múltiplas listas, índices personalizados, manipulação de colunas numéricas, seleção de linhas e conversão para dicionário.
 
-#### `Etapa03/Atividade03/`
+#### `dados/`
 Pipeline de análise de dados com Pandas:
 - Auditoria de integrações (`.merge(..., indicator=True)`) e filtragem de registros inválidos
 - Cálculo de faturamento bruto, descontos e impostos por transação
